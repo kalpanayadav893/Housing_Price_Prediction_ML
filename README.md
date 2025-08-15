@@ -1,51 +1,37 @@
 # Housing_Price_Prediction_ML
 A machine learning project for housing price prediction using Linear, Lasso, and Ridge regression models, featuring data preprocessing, outlier handling, feature scaling, and performance evaluation.
 
-🏠 Housing Price Prediction using Machine Learning
+---
 
-This project predicts housing prices using regression models on the Boston Housing Dataset.
-It includes data preprocessing, feature engineering, outlier handling, scaling, model training, and evaluation using multiple regression techniques.
+# 💳 Loan Approval Prediction using Machine Learning
 
-📌 Features of the Project
+This project predicts whether a loan application will be **approved or rejected** based on applicant details and financial information.  
+It applies **Decision Tree**, **Naive Bayes**, and **Random Forest** classifiers to perform prediction and compares their performance.
 
-Data Cleaning & Preprocessing
+---
 
-Removes duplicates.
+## 📌 Features of the Project
+- **Data Preprocessing**
+  - Cleans column names.
+  - Handles missing values.
+  - Encodes categorical variables with `LabelEncoder`.
+  - Applies log transformation for skewed variables.
+  - Creates new features like **total assets**.
+  - Scales features using `StandardScaler`.
 
-Handles missing values with SimpleImputer.
+- **Exploratory Data Analysis (EDA)**
+  - Loan status distribution plot.
+  - Income distribution by education level.
+  - Loan amount distribution.
 
-Outlier detection and removal for INDUS feature.
+- **Model Training**
+  - Decision Tree Classifier
+  - Naive Bayes Classifier
+  - Random Forest Classifier
 
-One-hot encoding for categorical features.
-
-Feature scaling using MinMaxScaler.
-
-Exploratory Data Analysis
-
-Correlation heatmap to analyze feature relationships.
-
-Boxplots for outlier visualization.
-
-Residual plots for regression performance.
-
-Model Training
-
-Linear Regression
-
-Lasso Regression
-
-Ridge Regression
-
-Model Evaluation
-
-Mean Absolute Error (MAE)
-
-Mean Squared Error (MSE)
-
-R² Score
-
-Model comparison plot.
-
-Feature Importance
-
-Visualizes regression coefficients for Linear Regression.
+- **Model Evaluation**
+  - Accuracy scores for all models.
+  - Classification report for Random Forest.
+  - Confusion matrix heatmap.
+  - Feature importance plot for Random Forest.
+  - Model accuracy comparison plot.
