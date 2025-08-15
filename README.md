@@ -1,37 +1,34 @@
 # Housing_Price_Prediction_ML
 A machine learning project for housing price prediction using Linear, Lasso, and Ridge regression models, featuring data preprocessing, outlier handling, feature scaling, and performance evaluation.
 
----
+# 🏠 Housing Price Prediction using Machine Learning
 
-# 💳 Loan Approval Prediction using Machine Learning
-
-This project predicts whether a loan application will be **approved or rejected** based on applicant details and financial information.  
-It applies **Decision Tree**, **Naive Bayes**, and **Random Forest** classifiers to perform prediction and compares their performance.
+This project predicts **housing prices** using multiple regression models on the **Boston Housing Dataset**.  
+It covers **data preprocessing, outlier handling, feature scaling, model training, evaluation, and comparison** of different regression techniques.
 
 ---
 
 ## 📌 Features of the Project
 - **Data Preprocessing**
-  - Cleans column names.
-  - Handles missing values.
-  - Encodes categorical variables with `LabelEncoder`.
-  - Applies log transformation for skewed variables.
-  - Creates new features like **total assets**.
-  - Scales features using `StandardScaler`.
+  - Removes duplicate entries.
+  - Handles missing values with `SimpleImputer`.
+  - Detects and removes outliers from `INDUS`.
+  - Encodes categorical variables using `OneHotEncoder`.
+  - Scales features using `MinMaxScaler`.
 
-- **Exploratory Data Analysis (EDA)**
-  - Loan status distribution plot.
-  - Income distribution by education level.
-  - Loan amount distribution.
+- **Exploratory Data Analysis**
+  - Correlation heatmap to analyze feature relationships.
+  - Boxplots for visualizing outliers.
 
 - **Model Training**
-  - Decision Tree Classifier
-  - Naive Bayes Classifier
-  - Random Forest Classifier
+  - Linear Regression
+  - Lasso Regression
+  - Ridge Regression
 
 - **Model Evaluation**
-  - Accuracy scores for all models.
-  - Classification report for Random Forest.
-  - Confusion matrix heatmap.
-  - Feature importance plot for Random Forest.
-  - Model accuracy comparison plot.
+  - Mean Absolute Error (MAE)
+  - Mean Squared Error (MSE)
+  - R² Score
+  - Residual plots for Linear Regression.
+  - Feature importance chart for Linear Regression.
+  - Model comparison bar plot.
